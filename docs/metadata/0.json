@@ -1,7 +1,7 @@
 {
-  "name": "saho with ethereum in hand",
-  "description": "very sleepy.",
-  "image": "ipfs://QmWMa9T5RfibCKjhHAaiMAP38uSeqy46idCstEtuwoZCqy",
+  "name": "favorite image",
+  "description": "This NFT gets its images from github.",
+  "image": "https://sahokun.github.io/nft-sahokun-eth/images/0.png",
   "external_url": "https://twitter.com/sahokun",
   "background_color": "000000",
   "animation_url": "",
