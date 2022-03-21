@@ -1,0 +1,58 @@
+{
+  "name": "saho with ethereum in hand",
+  "description": "very sleepy.",
+  "image": "ipfs://QmWMa9T5RfibCKjhHAaiMAP38uSeqy46idCstEtuwoZCqy",
+  "external_url": "https://twitter.com/sahokun",
+  "background_color": "000000",
+  "animation_url": "",
+  "attributes": [
+    {
+      "trait_type": "birthworld",
+      "value": "Britannia"
+    },
+    {
+      "trait_type": "birthtown",
+      "value": "Vesper"
+    },
+    {
+      "display_type": "boost_percentage",
+      "trait_type": "Physical Resistance",
+      "value": 70
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Magery",
+      "value": 100
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Animal Taming",
+      "value": 120
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Animal Lore",
+      "value": 120
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Veterinary",
+      "value": 100
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Musicianship",
+      "value": 100
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Peacemaking",
+      "value": 100
+    },
+    {
+      "display_type": "number",
+      "trait_type": "Meditation",
+      "value": 60
+    }
+  ]
+}
