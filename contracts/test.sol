@@ -1,13 +1,14 @@
-pragma solidity ^0.4.25;
+// SPDX-License-Identifier: none
+pragma solidity ^0.8.13;
 contract HelloBitbank {
     string message;
-    constructor() public {
+    constructor()  {
         message = 'hello bitbank!';
     }
-    function set(string new_message) public{
+    function set(string memory new_message) public{
         message = new_message;
     }
-    function get() public constant returns (string out_message){
+    function get() public view returns (string memory out_message){
         return message;
     }
 }
