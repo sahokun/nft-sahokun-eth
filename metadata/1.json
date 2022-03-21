@@ -1,7 +1,7 @@
 {
   "name": "favorite image",
   "description": "This NFT gets its images from github.",
-  "image": "https://github/sahokun/nft-sahokun-eth/images/1.png",
+  "image": "https://github.com/sahokun/nft-sahokun-eth/blob/main/images/1.png",
   "external_url": "https://twitter.com/sahokun",
   "background_color": "000000",
   "animation_url": "",
