@@ -15,5 +15,6 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "EditorConfig.EditorConfig"
-  }
+  },
+  "solidity.compileUsingRemoteVersion" : "v0.4.3+commit.2353da71"
 }
