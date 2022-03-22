@@ -10,9 +10,12 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts/utils/cryptography/draft-EIP712.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/draft-ERC721Votes.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
+
 
 contract SahokunEth is ERC721, ERC721Enumerable, ERC721URIStorage, Pausable, Ownable, ERC721Burnable, EIP712, ERC721Votes {
     using Counters for Counters.Counter;
+    using Strings for uint256;
 
     Counters.Counter private _tokenIdCounter;
 
@@ -60,11 +63,11 @@ contract SahokunEth is ERC721, ERC721Enumerable, ERC721URIStorage, Pausable, Own
 
     function tokenURI(uint256 tokenId)
         public
-        view
+        pure
         override(ERC721, ERC721URIStorage)
         returns (string memory)
     {
-        return super.tokenURI(tokenId);
+        return string(abi.encodePacked(_baseURI(), tokenId.toString(), ".json"));
     }
 
     function supportsInterface(bytes4 interfaceId)
