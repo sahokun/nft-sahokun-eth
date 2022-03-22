@@ -19,7 +19,7 @@ contract SahokunEth is ERC721, ERC721Enumerable, ERC721URIStorage, Pausable, Own
     constructor() ERC721("sahokun.eth", "SAHOE") EIP712("sahokun.eth", "1") {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://sahokun.github.io/nft-sahokun-eth/metadata";
+        return "https://sahokun.github.io/nft-sahokun-eth/metadata/";
     }
 
     function pause() public onlyOwner {
