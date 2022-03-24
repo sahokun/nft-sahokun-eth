@@ -8,16 +8,18 @@ import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 
 contract SahokunEth is ERC721, ERC721Enumerable, ERC721URIStorage, Pausable, Ownable, ERC721Burnable {
+    using Strings for uint256;
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("sahokun.eth", "SAHOE") {}
+    constructor() ERC721("sahokun.eth V2", "SAHOEV2") {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://sahokun.github.io/nft-sahokun-eth/metadata/";
+        return "";
     }
 
     function pause() public onlyOwner {
@@ -35,7 +37,7 @@ contract SahokunEth is ERC721, ERC721Enumerable, ERC721URIStorage, Pausable, Own
         _setTokenURI(tokenId, uri);
     }
 
-    function safeTokenURI(uint256 tokenId, string memory uri) public onlyOwner {
+    function setTokenURI(uint256 tokenId, string memory uri) public onlyOwner {
         _setTokenURI(tokenId, uri);
     }
 
@@ -59,7 +61,11 @@ contract SahokunEth is ERC721, ERC721Enumerable, ERC721URIStorage, Pausable, Own
         override(ERC721, ERC721URIStorage)
         returns (string memory)
     {
-        return string(abi.encodePacked(super.tokenURI(tokenId), ".json"));
+        string memory stored = super.tokenURI(tokenId);
+        if (bytes(stored).length > 0) {
+            return stored;
+        }
+        return string(abi.encodePacked("https://sahokun.github.io/nft-sahokun-eth/metadata/", tokenId.toString(), ".json"));
     }
 
     function supportsInterface(bytes4 interfaceId)
