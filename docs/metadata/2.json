@@ -6,29 +6,33 @@
   "animation_url": "",
   "attributes": [
     {
-      "trait_type": "mother",
+      "trait_type": "MOTHER",
       "value": "Kasumi"
     },
     {
-      "trait_type": "father",
+      "trait_type": "FATHER",
       "value": "Purinun"
     },
     {
-      "trait_type": "factory manager",
+      "trait_type": "GRANPA",
+      "value": "jun"
+    },
+    {
+      "trait_type": "Factory Manager",
       "value": "saho"
     },
     {
-      "trait_type": "existance of healing",
+      "trait_type": "Existance Of Healing",
       "value": "moon"
     },
     {
       "display_type": "boost_percentage",
-      "trait_type": "dajare power",
+      "trait_type": "Dajare Power",
       "value": 100
     },
     {
       "display_type": "number",
-      "trait_type": "mago luck",
+      "trait_type": "Mago Luck",
       "value": 100
     }
   ]
