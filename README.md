@@ -10,3 +10,10 @@ https://remix.ethereum.orgに接続してworkspace-localhost
 https://sahokun.github.io/nft-sahokun-eth/
 
 https://sahokun.github.io/nft-sahokun-eth/metadata/0
+
+
+cd ~/Document/workspace/vagrant/docker
+vagrant up
+ssh docker-host
+cd ~/docker/nodejs/.devcontainer/development
+docker-compose up -d
