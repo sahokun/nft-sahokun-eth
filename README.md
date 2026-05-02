@@ -7,9 +7,8 @@ $ yarn add --dev @remix-project/remixd
 $ yarn remixd -s ./contracts --remix-ide https://remix.ethereum.org
 https://remix.ethereum.orgに接続してworkspace-localhost
 
-https://sahokun.github.io/nft-sahokun-eth/
-
-https://sahokun.github.io/nft-sahokun-eth/metadata/0
+https://sahokun.github.io/nft-sahokun-eth/ -> 404
+https://sahokun.github.io/nft-sahokun-eth/metadata/0.json
 
 
 cd ~/Document/workspace/vagrant/docker
