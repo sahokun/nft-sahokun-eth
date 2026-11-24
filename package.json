@@ -5,10 +5,10 @@
   "dependencies": {
     "prettier": "^2.6.0",
     "stylelint": "^14.6.0",
-    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-prettier": "^9.0.5",
     "stylelint-prettier": "^2.0.0"
   },
   "devDependencies": {
-    "@remix-project/remixd": "^0.5.7"
+    "@remix-project/remixd": "^0.6.65"
   }
 }
